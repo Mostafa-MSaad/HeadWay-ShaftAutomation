@@ -58,6 +58,8 @@ public class enterAccountInfo_page {
 
 
         ///driver.element().scrollToElement(createAccountButton);
+        driver.element().keyPress(titleRadioButtonMR, Keys.PAGE_DOWN);
+
 
 
         Select mySelect1= new Select(driver.getDriver().findElement(days));
@@ -101,6 +103,9 @@ public class enterAccountInfo_page {
         //driver.findElement(zipcode).sendKeys(Zipcode);
         driver.element().type(mobile_number,Mobilenumber);
         //driver.findElement(mobile_number).sendKeys(Mobilenumber);
+
+        driver.element().keyPress(createAccountButton, Keys.PAGE_DOWN);
+
 
         Select mySelect4= new Select(driver.getDriver().findElement(country));
         mySelect4.selectByIndex(0);
